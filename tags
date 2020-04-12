@@ -14,5 +14,6 @@ CreatePosts	db/migrate/20151202061742_create_posts.rb	/^class CreatePosts < Acti
 Post	app/models/post.rb	/^class Post < ActiveRecord::Base$/;"	c
 change	db/migrate/20151202061645_create_authors.rb	/^  def change$/;"	f	class:CreateAuthors
 change	db/migrate/20151202061742_create_posts.rb	/^  def change$/;"	f	class:CreatePosts
+clickbaity	app/models/post.rb	/^  def clickbaity$/;"	f	class:Post
 system!	bin/setup	/^def system!(*args)$/;"	f
 system!	bin/update	/^def system!(*args)$/;"	f

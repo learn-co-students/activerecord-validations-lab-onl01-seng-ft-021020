@@ -8,10 +8,11 @@ class Post < ActiveRecord::Base
 
   def clickbaity
     return if title.nil?  
-    unless title.match(/Won't Believe/i) || 
-        title.match(/Secret/i) ||
-        title.match(/Top \d+/i) ||
-        title.match(/Guess/i)
+    # unless title.match(/Won't Believe/i) || 
+    #     title.match(/Secret/i) ||
+    #     title.match(/Top \d+/i) ||
+    #     title.match(/Guess/i)
+    unless title.match(/Won't Believe|Secret|Top \d+|Guess/i) 
       errors.add(:title, "Not sufficiently clickbaity")
     end
   end
